@@ -12,7 +12,7 @@ The labs simulate real-world help desk, network engineering, and security suppor
 <img width="3081" height="986" alt="Pasted Graphic 4" src="https://github.com/user-attachments/assets/7c512ca5-241c-418f-8e0f-c73affb6fe48" />
 
 
-# WGU Network Engineering Labs
+# Network Engineering Labs
 
 ## Completed Labs
 
