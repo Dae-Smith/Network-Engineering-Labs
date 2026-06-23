@@ -1,1 +1,53 @@
+# Ticket 3 - Routing Loop Troubleshooting
+
+## Scenario
+
+Ubuntu-Server could not access internal resources or Internet destinations.
+
+## Investigation
+
+### Tools Used
+
+* Ping
+* Traceroute
+* Routing Tables
+
+### Commands
+
+```bash
+ip route
+traceroute 8.8.8.8
+show ip route
+```
+
+### Findings
+
+Traffic was caught in a routing loop due to an incorrect default route.
+
+Incorrect Route:
+
+```text
+0.0.0.0/0 -> 10.10.80.254
+```
+
+Correct Route:
+
+```text
+0.0.0.0/0 -> 10.10.70.1
+```
+
+## Root Cause
+
+Router4 contained an invalid default route causing traffic to loop indefinitely.
+
+## Resolution
+
+Removed the incorrect route and configured the proper next-hop address.
+
+## Skills Demonstrated
+
+* Routing Troubleshooting
+* Static Route Configuration
+* Network Path Analysis
+* Infrastructure Support
 
