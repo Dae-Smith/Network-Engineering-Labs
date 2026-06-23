@@ -1,1 +1,55 @@
+# Ticket 5 - DMZ Server Access Issue
+
+## Scenario
+
+Users outside the DMZ were unable to access DMZ-Server1.
+
+## Investigation
+
+### Tools Used
+
+* Linux Networking Commands
+* Netplan
+* Firewall Analysis
+
+### Commands
+
+```bash
+ip addr
+ip route
+cat /etc/netplan/01-netcfg.yaml
+```
+
+### Findings
+
+DMZ-Server1 contained incorrect network settings and firewall rules were preventing access.
+
+Incorrect Configuration:
+
+```text
+IP Address: 10.10.90.10
+Gateway: 10.10.90.1
+```
+
+Correct Configuration:
+
+```text
+IP Address: 10.10.20.10
+Gateway: 10.10.20.254
+```
+
+## Root Cause
+
+Improper firewall configuration and incorrect server network settings prevented access to the DMZ host.
+
+## Resolution
+
+Corrected firewall rules, updated server network settings, and verified connectivity.
+
+## Skills Demonstrated
+
+* Firewall Troubleshooting
+* Linux Administration
+* DMZ Architecture
+* Network Configuration
 
