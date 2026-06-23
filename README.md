@@ -57,5 +57,12 @@ Currently pursuing a B.S. in Cloud & Network Engineering at WGU while earning in
 * CompTIA A+
 * CompTIA Network+
 * CompTIA Security+
+* CompTIA CIOS
+* CompTIA CSIS
+* Linux Essentials
+* ITILv4
+* AZ-900
+* AZ-104
+* AZ-305
 
 Interested in opportunities involving Network Engineering, Cloud Engineering, Cybersecurity, and Infrastructure Support.
