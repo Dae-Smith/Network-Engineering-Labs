@@ -1,1 +1,44 @@
+# Ticket 4 - Windows Workstation Connectivity
+
+## Scenario
+
+A user could not access internal resources or the Internet from a Windows workstation.
+
+## Investigation
+
+### Tools Used
+
+* ipconfig
+* Windows Network Settings
+* Ping
+
+### Commands
+
+```cmd
+ipconfig /all
+ping 10.10.40.1
+```
+
+### Findings
+
+The workstation had received an APIPA address rather than a valid network address.
+
+```text
+169.254.x.x
+```
+
+## Root Cause
+
+The workstation was incorrectly configured and could not obtain proper network settings.
+
+## Resolution
+
+Configured the correct IPv4 settings including IP address, subnet mask, and default gateway.
+
+## Skills Demonstrated
+
+* Windows Networking
+* TCP/IP Configuration
+* Endpoint Troubleshooting
+* Connectivity Testing
 
