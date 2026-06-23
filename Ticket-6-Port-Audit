@@ -1,1 +1,56 @@
+# Ticket 6 - Unauthorized Port Audit
+
+## Scenario
+
+A Cyber Security Lead requested identification of unauthorized open ports on DMZ-Server2.
+
+## Investigation
+
+### Tools Used
+
+* Nmap
+* Linux Socket Analysis
+
+### Commands
+
+```bash
+nmap -sV <target>
+nmap -p- <target>
+ss -tulnp
+```
+
+### Findings
+
+Several ports were identified that were not part of the approved port list.
+
+Unauthorized Ports:
+
+```text
+21
+80
+111
+139
+145
+443
+666
+5489
+9000
+9001
+9999
+```
+
+## Root Cause
+
+Multiple services were listening on ports that were not approved by the organization's security policy.
+
+## Resolution
+
+Documented all unauthorized ports in Ticket6.ports.txt and validated the audit.
+
+## Skills Demonstrated
+
+* Security Auditing
+* Nmap Enumeration
+* Port Analysis
+* Security Documentation
 
