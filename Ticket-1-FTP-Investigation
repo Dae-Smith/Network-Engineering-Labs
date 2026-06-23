@@ -1,0 +1,45 @@
+# Ticket 1 - Illegal FTP Site Investigation
+
+## Scenario
+
+A Security Analyst reported suspicious FTP traffic associated with copyrighted software downloads and requested identification of the FTP server hosting the content.
+
+## Investigation
+
+### Tools Used
+
+* Wireshark
+* FTP Protocol Analysis
+* TCP Stream Inspection
+
+### Commands
+
+```text
+ftp
+Follow TCP Stream
+```
+
+### Findings
+
+Analysis of the packet capture identified an FTP session involving unauthorized software downloads.
+
+FTP server identified:
+
+```text
+10.10.20.2
+```
+
+## Root Cause
+
+An unauthorized FTP server was hosting copyrighted software.
+
+## Resolution
+
+Documented the server IP address and created the required reporting file.
+
+## Skills Demonstrated
+
+* Wireshark Analysis
+* FTP Investigation
+* Packet Capture Analysis
+* Incident Response
