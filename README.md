@@ -11,6 +11,28 @@ The labs simulate real-world help desk, network engineering, and security suppor
 
 <img width="3081" height="986" alt="Pasted Graphic 4" src="https://github.com/user-attachments/assets/7c512ca5-241c-418f-8e0f-c73affb6fe48" />
 
+# WGU Network Engineering Labs
+
+## Completed Labs
+
+### Ticket 1 - FTP Investigation
+[View Project](Ticket-1-FTP-Investigation)
+
+### Ticket 2 - DNS Troubleshooting
+[View Project](Ticket-2-DNS-Troubleshooting)
+
+### Ticket 3 - Routing Issue
+[View Project](Ticket-3-Routing-Issue)
+
+### Ticket 4 - Windows Networking
+[View Project](Ticket-4-Windows-Networking)
+
+### Ticket 5 - DMZ Firewall Issue
+[View Project](Ticket-5-DMZ-Firewall-Issue)
+
+### Ticket 6 - Port Audit
+[View Project](Ticket-6-Port-Audit)
+
 ## Skills Demonstrated
 
 * Network Troubleshooting
