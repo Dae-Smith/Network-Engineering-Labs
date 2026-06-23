@@ -1,1 +1,53 @@
+# Ticket 2 - DNS Resolution Issue
+
+## Scenario
+
+Users attempting to access [www.wgu.edu](http://www.wgu.edu) were redirected to an unauthorized website.
+
+## Investigation
+
+### Tools Used
+
+* DNS Manager
+* nslookup
+* host
+* Browser Testing
+
+### Commands
+
+```bash
+host www.wgu.edu
+nslookup www.wgu.edu
+```
+
+### Findings
+
+DNS resolution returned:
+
+```text
+10.10.20.20
+```
+
+which is a private IP address.
+
+Research revealed the correct public destination was:
+
+```text
+151.101.155.52
+```
+
+## Root Cause
+
+The DNS Host (A) record for [www.wgu.edu](http://www.wgu.edu) was configured with an incorrect IP address.
+
+## Resolution
+
+Updated the DNS record with the correct public IP address and verified successful name resolution.
+
+## Skills Demonstrated
+
+* DNS Troubleshooting
+* DNS Administration
+* Root Cause Analysis
+* Name Resolution Testing
 
